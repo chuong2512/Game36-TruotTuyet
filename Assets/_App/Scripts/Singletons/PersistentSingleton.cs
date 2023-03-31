@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace JumpFrog
+namespace TruotTuyet
 {
 	/// <summary>
 	/// Persistent singleton. Destroy the new one if exists and keep the older.

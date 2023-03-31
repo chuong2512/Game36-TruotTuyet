@@ -1,7 +1,7 @@
 using UnityEngine.Purchasing.Security;
 using System;
 using System.Collections;
-using JumpFrog;
+using TruotTuyet;
 using UnityEngine;
 using UnityEngine.Purchasing;
 

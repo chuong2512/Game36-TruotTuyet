@@ -7,7 +7,7 @@ public class DiamondDisplay : MonoBehaviour
 {
    public TextMeshProUGUI diamondTmp;
 
-   void OnValidated()
+   void OnValidate()
    {
       diamondTmp = GetComponent<TextMeshProUGUI>();
    }
