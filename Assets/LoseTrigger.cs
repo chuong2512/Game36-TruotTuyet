@@ -6,9 +6,12 @@ public class LoseTrigger : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Player")
+        Debug.Log("Losee");
+        
+        if (other.gameObject.CompareTag("Player"))
         {
             GameUI.Instance.ShowLose();
+            Destroy(this.gameObject);
         }
     }
 }

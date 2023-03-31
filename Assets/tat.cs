@@ -7,9 +7,11 @@ public class tat : MonoBehaviour
 {
    private void OnTriggerEnter2D(Collider2D other)
    {
-      if (other.gameObject.name == "Player")
-      {
-         GameDataManager.Instance.playerData.AddDiamond(1);
-      }
+      
+      Debug.Log("Add point");
+      Debug.Log($"{other.gameObject.name}");
+      GameDataManager.Instance.playerData.AddDiamond(1);
+      Destroy(this.gameObject);
+
    }
 }

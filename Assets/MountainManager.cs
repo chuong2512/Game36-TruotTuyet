@@ -34,7 +34,7 @@ public class MountainManager : Singleton<MountainManager>
 
     private void Update()
     {
-        if (GameUI.Instance.currentState == State.Running)
+        if (GameUI.Instance.currentState != State.Stop)
         {
             transform.position = (Vector2)transform.position + Time.deltaTime * Vector2.left * speed;
         }

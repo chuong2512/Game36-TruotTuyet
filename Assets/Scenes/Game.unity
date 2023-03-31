@@ -136,9 +136,10 @@ GameObject:
   - component: {fileID: 49914712}
   - component: {fileID: 49914716}
   - component: {fileID: 49914717}
+  - component: {fileID: 49914718}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,6 +268,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &49914718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49914711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47910fdfb922eb245a917ad902af9770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &61824622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,7 +1344,7 @@ GameObject:
   - component: {fileID: 1207013606}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1366,7 +1379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 49914717}
   rigidbody2D: {fileID: 49914712}
-  force: 250
+  force: 330
 --- !u!1 &1245391935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,14 +1974,6 @@ MonoBehaviour:
   menu: {fileID: 1245391937}
   bg: {fileID: 1201962357}
   lose: {fileID: 1342897336}
-  levels:
-  - {fileID: 3028916916873947656, guid: 5e680df9f4a233244bb1329d2bd1acb9, type: 3}
-  - {fileID: 3028916916873947656, guid: 26e3bfc6e19e7244dbf101ba481de1fa, type: 3}
-  - {fileID: 3028916916873947656, guid: c612691e4048f1541a886857c8b8e4f4, type: 3}
-  - {fileID: 3028916916873947656, guid: 6e028e7609bacf6448676b91a361c27e, type: 3}
-  - {fileID: 3028916916873947656, guid: 0ba652de5c98d474d8d2d9baedccd04d, type: 3}
-  - {fileID: 3028916916873947656, guid: ebcb751ec6b5e6f4d8ba822c894f9a21, type: 3}
-  - {fileID: 3028916916873947656, guid: 40cf6e7497fd6194086adafcb83352c6, type: 3}
   currentState: 0
   countTime: 1
   timeee: 1
@@ -2304,7 +2309,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877848632}
   m_BodyType: 2
-  m_Simulated: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1

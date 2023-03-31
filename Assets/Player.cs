@@ -33,6 +33,7 @@ public class Player : Singleton<Player>
     [Button]
     public void Jump()
     {
+
         rigidbody2D.AddForce(Vector2.up * force);
         animator.SetTrigger("Jump");
     }

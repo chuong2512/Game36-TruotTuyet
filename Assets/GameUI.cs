@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public enum State
 {
-    Running, Stop
+    Running, Stop, Jumping
 }
 
 public class GameUI : Singleton<GameUI>
@@ -21,7 +21,6 @@ public class GameUI : Singleton<GameUI>
 
     private GameObject level;
     public GameObject lose;
-    public GameObject[] levels;
 
     public State currentState;
 
@@ -38,6 +37,8 @@ public class GameUI : Singleton<GameUI>
     private void playAgainGame()
     {
         //continue game
+        SetState(State.Running);
+        lose.SetActive(false);
     }
 
     private void ExitGame()
